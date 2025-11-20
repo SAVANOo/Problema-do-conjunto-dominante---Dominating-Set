@@ -51,4 +51,19 @@ public class DominatingSet {
 
         return dominatingSet;
     }
+
+    private static DominatingSet buildGraphExample1() {
+        // 0 - 1 - 2 - 3
+        //     |
+        //     4
+
+        DominatingSet graph = new DominatingSet();
+
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 2);
+        graph.addEdge(2, 3);
+        graph.addEdge(1, 4);
+
+        return graph;
+    }
 }
