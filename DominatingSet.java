@@ -66,4 +66,23 @@ public class DominatingSet {
 
         return graph;
     }
+
+    private static DominatingSet buildGraphExample2() {
+        //    1
+        //  /   \
+        // 0     2
+        //  \   /
+        //    3
+
+        DominatingSet graph = new DominatingSet();
+
+        graph.addEdge(0, 1);
+        graph.addEdge(0, 3);
+        graph.addEdge(2, 1);
+        graph.addEdge(2, 3);
+
+        return graph;
+    }
+        return graph;
+    }
 }
